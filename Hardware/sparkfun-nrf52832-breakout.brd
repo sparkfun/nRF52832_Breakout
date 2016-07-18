@@ -3693,9 +3693,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="10.5264" y1="27.94" x2="11.4046" y2="27.94" width="0.1524" layer="1"/>
 <wire x1="10.5264" y1="27.94" x2="10.14" y2="27.94" width="0.1524" layer="1"/>
 </signal>
-<signal name="N$8">
-<contactref element="J1" pad="1"/>
-</signal>
 <signal name="N$14">
 <contactref element="J1" pad="4"/>
 <contactref element="JP1" pad="1"/>
