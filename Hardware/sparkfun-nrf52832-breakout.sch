@@ -10168,6 +10168,20 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0.8866" y="-0.23263125"/>
 </polygon>
 </package>
+<package name="FIDUCIAL-1X2">
+<description>&lt;h3&gt;Fiducial - Circle, 1mm&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FIDUCIAL&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+</package>
+<package name="FIDUCIAL-MICRO">
+<description>&lt;h3&gt;Fiducial - Circle, 0.25in&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FIDUCIAL&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LETTER_L">
@@ -14705,6 +14719,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0.6834" y="-1.65"/>
 </polygon>
 </symbol>
+<symbol name="FIDUCIAL">
+<description>&lt;h3&gt;Fiducial&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
+&lt;p&gt;Devices using:
+&lt;ul&gt;&lt;li&gt;FIDUCIAL&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-0.762" y1="0.762" x2="0.762" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0.762" y1="0.762" x2="-0.762" y2="-0.762" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="1.27" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME-LETTER" prefix="FRAME">
@@ -14830,6 +14853,25 @@ layer for the logo on the board is tSilk.&lt;/p&gt;</description>
 </technologies>
 </device>
 <device name="MINI" package="OSHW-LOGO-MINI">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL" prefix="FD">
+<description>&lt;h3&gt;Fiducial Alignment Points&lt;/h3&gt;
+&lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="1X2" package="FIDUCIAL-1X2">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UFIDUCIAL" package="FIDUCIAL-MICRO">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -15193,55 +15235,55 @@ layer for the logo on the board is tSilk.&lt;/p&gt;</description>
 <vertex x="2.1" y="-2.3"/>
 <vertex x="-2.1" y="-2.3" curve="-90"/>
 </polygon>
-<smd name="1" x="-2.86" y="2.2" dx="0.23" dy="0.68" layer="1" rot="R90"/>
-<smd name="EP" x="0" y="0" dx="4.6" dy="4.6" layer="1"/>
-<smd name="2" x="-2.86" y="1.8" dx="0.23" dy="0.68" layer="1" rot="R90"/>
-<smd name="3" x="-2.86" y="1.4" dx="0.23" dy="0.68" layer="1" rot="R90"/>
-<smd name="4" x="-2.86" y="1" dx="0.23" dy="0.68" layer="1" rot="R90"/>
-<smd name="5" x="-2.86" y="0.6" dx="0.23" dy="0.68" layer="1" rot="R90"/>
-<smd name="6" x="-2.86" y="0.2" dx="0.23" dy="0.68" layer="1" rot="R90"/>
-<smd name="7" x="-2.86" y="-0.2" dx="0.23" dy="0.68" layer="1" rot="R90"/>
-<smd name="8" x="-2.86" y="-0.6" dx="0.23" dy="0.68" layer="1" rot="R90"/>
-<smd name="9" x="-2.86" y="-1" dx="0.23" dy="0.68" layer="1" rot="R90"/>
-<smd name="10" x="-2.86" y="-1.4" dx="0.23" dy="0.68" layer="1" rot="R90"/>
-<smd name="11" x="-2.86" y="-1.8" dx="0.23" dy="0.68" layer="1" rot="R90"/>
-<smd name="12" x="-2.86" y="-2.2" dx="0.23" dy="0.68" layer="1" rot="R90"/>
-<smd name="13" x="-2.2" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180"/>
-<smd name="14" x="-1.8" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180"/>
-<smd name="15" x="-1.4" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180"/>
-<smd name="16" x="-1" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180"/>
-<smd name="17" x="-0.6" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180"/>
-<smd name="18" x="-0.2" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180"/>
-<smd name="19" x="0.2" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180"/>
-<smd name="20" x="0.6" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180"/>
-<smd name="21" x="1" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180"/>
-<smd name="22" x="1.4" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180"/>
-<smd name="23" x="1.8" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180"/>
-<smd name="24" x="2.2" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180"/>
-<smd name="25" x="2.86" y="-2.2" dx="0.23" dy="0.68" layer="1" rot="R270"/>
-<smd name="26" x="2.86" y="-1.8" dx="0.23" dy="0.68" layer="1" rot="R270"/>
-<smd name="27" x="2.86" y="-1.4" dx="0.23" dy="0.68" layer="1" rot="R270"/>
-<smd name="28" x="2.86" y="-1" dx="0.23" dy="0.68" layer="1" rot="R270"/>
-<smd name="29" x="2.86" y="-0.6" dx="0.23" dy="0.68" layer="1" rot="R270"/>
-<smd name="30" x="2.86" y="-0.2" dx="0.23" dy="0.68" layer="1" rot="R270"/>
-<smd name="31" x="2.86" y="0.2" dx="0.23" dy="0.68" layer="1" rot="R270"/>
-<smd name="32" x="2.86" y="0.6" dx="0.23" dy="0.68" layer="1" rot="R270"/>
-<smd name="33" x="2.86" y="1" dx="0.23" dy="0.68" layer="1" rot="R270"/>
-<smd name="34" x="2.86" y="1.4" dx="0.23" dy="0.68" layer="1" rot="R270"/>
-<smd name="35" x="2.86" y="1.8" dx="0.23" dy="0.68" layer="1" rot="R270"/>
-<smd name="36" x="2.86" y="2.2" dx="0.23" dy="0.68" layer="1" rot="R270"/>
-<smd name="37" x="2.2" y="2.86" dx="0.23" dy="0.68" layer="1"/>
-<smd name="38" x="1.8" y="2.86" dx="0.23" dy="0.68" layer="1"/>
-<smd name="39" x="1.4" y="2.86" dx="0.23" dy="0.68" layer="1"/>
-<smd name="40" x="1" y="2.86" dx="0.23" dy="0.68" layer="1"/>
-<smd name="41" x="0.6" y="2.86" dx="0.23" dy="0.68" layer="1"/>
-<smd name="42" x="0.2" y="2.86" dx="0.23" dy="0.68" layer="1"/>
-<smd name="43" x="-0.2" y="2.86" dx="0.23" dy="0.68" layer="1"/>
-<smd name="44" x="-0.6" y="2.86" dx="0.23" dy="0.68" layer="1"/>
-<smd name="45" x="-1" y="2.86" dx="0.23" dy="0.68" layer="1"/>
-<smd name="46" x="-1.4" y="2.86" dx="0.23" dy="0.68" layer="1"/>
-<smd name="47" x="-1.8" y="2.86" dx="0.23" dy="0.68" layer="1"/>
-<smd name="48" x="-2.2" y="2.86" dx="0.23" dy="0.68" layer="1"/>
+<smd name="1" x="-2.86" y="2.2" dx="0.23" dy="0.68" layer="1" rot="R90" cream="no"/>
+<smd name="EP" x="0" y="0" dx="4.6" dy="4.6" layer="1" cream="no"/>
+<smd name="2" x="-2.86" y="1.8" dx="0.23" dy="0.68" layer="1" rot="R90" cream="no"/>
+<smd name="3" x="-2.86" y="1.4" dx="0.23" dy="0.68" layer="1" rot="R90" cream="no"/>
+<smd name="4" x="-2.86" y="1" dx="0.23" dy="0.68" layer="1" rot="R90" cream="no"/>
+<smd name="5" x="-2.86" y="0.6" dx="0.23" dy="0.68" layer="1" rot="R90" cream="no"/>
+<smd name="6" x="-2.86" y="0.2" dx="0.23" dy="0.68" layer="1" rot="R90" cream="no"/>
+<smd name="7" x="-2.86" y="-0.2" dx="0.23" dy="0.68" layer="1" rot="R90" cream="no"/>
+<smd name="8" x="-2.86" y="-0.6" dx="0.23" dy="0.68" layer="1" rot="R90" cream="no"/>
+<smd name="9" x="-2.86" y="-1" dx="0.23" dy="0.68" layer="1" rot="R90" cream="no"/>
+<smd name="10" x="-2.86" y="-1.4" dx="0.23" dy="0.68" layer="1" rot="R90" cream="no"/>
+<smd name="11" x="-2.86" y="-1.8" dx="0.23" dy="0.68" layer="1" rot="R90" cream="no"/>
+<smd name="12" x="-2.86" y="-2.2" dx="0.23" dy="0.68" layer="1" rot="R90" cream="no"/>
+<smd name="13" x="-2.2" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180" cream="no"/>
+<smd name="14" x="-1.8" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180" cream="no"/>
+<smd name="15" x="-1.4" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180" cream="no"/>
+<smd name="16" x="-1" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180" cream="no"/>
+<smd name="17" x="-0.6" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180" cream="no"/>
+<smd name="18" x="-0.2" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180" cream="no"/>
+<smd name="19" x="0.2" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180" cream="no"/>
+<smd name="20" x="0.6" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180" cream="no"/>
+<smd name="21" x="1" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180" cream="no"/>
+<smd name="22" x="1.4" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180" cream="no"/>
+<smd name="23" x="1.8" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180" cream="no"/>
+<smd name="24" x="2.2" y="-2.86" dx="0.23" dy="0.68" layer="1" rot="R180" cream="no"/>
+<smd name="25" x="2.86" y="-2.2" dx="0.23" dy="0.68" layer="1" rot="R270" cream="no"/>
+<smd name="26" x="2.86" y="-1.8" dx="0.23" dy="0.68" layer="1" rot="R270" cream="no"/>
+<smd name="27" x="2.86" y="-1.4" dx="0.23" dy="0.68" layer="1" rot="R270" cream="no"/>
+<smd name="28" x="2.86" y="-1" dx="0.23" dy="0.68" layer="1" rot="R270" cream="no"/>
+<smd name="29" x="2.86" y="-0.6" dx="0.23" dy="0.68" layer="1" rot="R270" cream="no"/>
+<smd name="30" x="2.86" y="-0.2" dx="0.23" dy="0.68" layer="1" rot="R270" cream="no"/>
+<smd name="31" x="2.86" y="0.2" dx="0.23" dy="0.68" layer="1" rot="R270" cream="no"/>
+<smd name="32" x="2.86" y="0.6" dx="0.23" dy="0.68" layer="1" rot="R270" cream="no"/>
+<smd name="33" x="2.86" y="1" dx="0.23" dy="0.68" layer="1" rot="R270" cream="no"/>
+<smd name="34" x="2.86" y="1.4" dx="0.23" dy="0.68" layer="1" rot="R270" cream="no"/>
+<smd name="35" x="2.86" y="1.8" dx="0.23" dy="0.68" layer="1" rot="R270" cream="no"/>
+<smd name="36" x="2.86" y="2.2" dx="0.23" dy="0.68" layer="1" rot="R270" cream="no"/>
+<smd name="37" x="2.2" y="2.86" dx="0.23" dy="0.68" layer="1" cream="no"/>
+<smd name="38" x="1.8" y="2.86" dx="0.23" dy="0.68" layer="1" cream="no"/>
+<smd name="39" x="1.4" y="2.86" dx="0.23" dy="0.68" layer="1" cream="no"/>
+<smd name="40" x="1" y="2.86" dx="0.23" dy="0.68" layer="1" cream="no"/>
+<smd name="41" x="0.6" y="2.86" dx="0.23" dy="0.68" layer="1" cream="no"/>
+<smd name="42" x="0.2" y="2.86" dx="0.23" dy="0.68" layer="1" cream="no"/>
+<smd name="43" x="-0.2" y="2.86" dx="0.23" dy="0.68" layer="1" cream="no"/>
+<smd name="44" x="-0.6" y="2.86" dx="0.23" dy="0.68" layer="1" cream="no"/>
+<smd name="45" x="-1" y="2.86" dx="0.23" dy="0.68" layer="1" cream="no"/>
+<smd name="46" x="-1.4" y="2.86" dx="0.23" dy="0.68" layer="1" cream="no"/>
+<smd name="47" x="-1.8" y="2.86" dx="0.23" dy="0.68" layer="1" cream="no"/>
+<smd name="48" x="-2.2" y="2.86" dx="0.23" dy="0.68" layer="1" cream="no"/>
 <wire x1="-3.127" y1="-2.5" x2="-3.127" y2="-3.127" width="0.2032" layer="21"/>
 <wire x1="-3.127" y1="-3.127" x2="-2.5" y2="-3.127" width="0.2032" layer="21"/>
 <wire x1="3.127" y1="-3.127" x2="3.127" y2="-2.5" width="0.2032" layer="21"/>
@@ -15250,6 +15292,60 @@ layer for the logo on the board is tSilk.&lt;/p&gt;</description>
 <wire x1="3.127" y1="2.5" x2="3.127" y2="3.127" width="0.2032" layer="21"/>
 <wire x1="-3.127" y1="2.5" x2="-2.5" y2="3.127" width="0.2032" layer="21"/>
 <circle x="-3.2" y="3.2" radius="0.25" width="0" layer="21"/>
+<rectangle x1="0.34" y1="0.34" x2="1.96" y2="1.96" layer="31"/>
+<rectangle x1="-1.96" y1="0.34" x2="-0.34" y2="1.96" layer="31" rot="R90"/>
+<rectangle x1="-1.96" y1="-1.96" x2="-0.34" y2="-0.34" layer="31" rot="R180"/>
+<rectangle x1="0.34" y1="-1.96" x2="1.96" y2="-0.34" layer="31" rot="R270"/>
+<rectangle x1="-3.1575" y1="0.099375" x2="-2.5625" y2="0.300625" layer="31"/>
+<rectangle x1="-3.1575" y1="0.499375" x2="-2.5625" y2="0.700625" layer="31"/>
+<rectangle x1="-3.1575" y1="0.899375" x2="-2.5625" y2="1.100625" layer="31"/>
+<rectangle x1="-3.1575" y1="1.299375" x2="-2.5625" y2="1.500625" layer="31"/>
+<rectangle x1="-3.1575" y1="1.699375" x2="-2.5625" y2="1.900625" layer="31"/>
+<rectangle x1="-3.1575" y1="2.099375" x2="-2.5625" y2="2.300625" layer="31"/>
+<rectangle x1="-3.1575" y1="-0.300625" x2="-2.5625" y2="-0.099375" layer="31"/>
+<rectangle x1="-3.1575" y1="-0.700625" x2="-2.5625" y2="-0.499375" layer="31"/>
+<rectangle x1="-3.1575" y1="-1.100625" x2="-2.5625" y2="-0.899375" layer="31"/>
+<rectangle x1="-3.1575" y1="-1.500625" x2="-2.5625" y2="-1.299375" layer="31"/>
+<rectangle x1="-3.1575" y1="-1.900625" x2="-2.5625" y2="-1.699375" layer="31"/>
+<rectangle x1="-3.1575" y1="-2.300625" x2="-2.5625" y2="-2.099375" layer="31"/>
+<rectangle x1="-2.4975" y1="-2.960625" x2="-1.9025" y2="-2.759375" layer="31" rot="R90"/>
+<rectangle x1="-2.0975" y1="-2.960625" x2="-1.5025" y2="-2.759375" layer="31" rot="R90"/>
+<rectangle x1="-1.6975" y1="-2.960625" x2="-1.1025" y2="-2.759375" layer="31" rot="R90"/>
+<rectangle x1="-1.2975" y1="-2.960625" x2="-0.7025" y2="-2.759375" layer="31" rot="R90"/>
+<rectangle x1="-0.8975" y1="-2.960625" x2="-0.3025" y2="-2.759375" layer="31" rot="R90"/>
+<rectangle x1="-0.4975" y1="-2.960625" x2="0.0975" y2="-2.759375" layer="31" rot="R90"/>
+<rectangle x1="-0.0975" y1="-2.960625" x2="0.4975" y2="-2.759375" layer="31" rot="R90"/>
+<rectangle x1="0.3025" y1="-2.960625" x2="0.8975" y2="-2.759375" layer="31" rot="R90"/>
+<rectangle x1="0.7025" y1="-2.960625" x2="1.2975" y2="-2.759375" layer="31" rot="R90"/>
+<rectangle x1="1.1025" y1="-2.960625" x2="1.6975" y2="-2.759375" layer="31" rot="R90"/>
+<rectangle x1="1.5025" y1="-2.960625" x2="2.0975" y2="-2.759375" layer="31" rot="R90"/>
+<rectangle x1="1.9025" y1="-2.960625" x2="2.4975" y2="-2.759375" layer="31" rot="R90"/>
+<rectangle x1="2.5625" y1="-2.300625" x2="3.1575" y2="-2.099375" layer="31" rot="R180"/>
+<rectangle x1="2.5625" y1="-1.900625" x2="3.1575" y2="-1.699375" layer="31" rot="R180"/>
+<rectangle x1="2.5625" y1="-1.500625" x2="3.1575" y2="-1.299375" layer="31" rot="R180"/>
+<rectangle x1="2.5625" y1="-1.100625" x2="3.1575" y2="-0.899375" layer="31" rot="R180"/>
+<rectangle x1="2.5625" y1="-0.700625" x2="3.1575" y2="-0.499375" layer="31" rot="R180"/>
+<rectangle x1="2.5625" y1="0.099375" x2="3.1575" y2="0.300625" layer="31" rot="R180"/>
+<rectangle x1="2.5625" y1="-0.300625" x2="3.1575" y2="-0.099375" layer="31" rot="R180"/>
+<rectangle x1="2.5625" y1="0.499375" x2="3.1575" y2="0.700625" layer="31" rot="R180"/>
+<rectangle x1="2.5625" y1="0.899375" x2="3.1575" y2="1.100625" layer="31" rot="R180"/>
+<rectangle x1="2.5625" y1="1.299375" x2="3.1575" y2="1.500625" layer="31" rot="R180"/>
+<rectangle x1="2.5625" y1="2.099375" x2="3.1575" y2="2.300625" layer="31" rot="R180"/>
+<rectangle x1="2.5625" y1="1.699375" x2="3.1575" y2="1.900625" layer="31" rot="R180"/>
+<rectangle x1="1.9025" y1="2.759375" x2="2.4975" y2="2.960625" layer="31" rot="R270"/>
+<rectangle x1="1.5025" y1="2.759375" x2="2.0975" y2="2.960625" layer="31" rot="R270"/>
+<rectangle x1="1.1025" y1="2.759375" x2="1.6975" y2="2.960625" layer="31" rot="R270"/>
+<rectangle x1="0.7025" y1="2.759375" x2="1.2975" y2="2.960625" layer="31" rot="R270"/>
+<rectangle x1="0.3025" y1="2.759375" x2="0.8975" y2="2.960625" layer="31" rot="R270"/>
+<rectangle x1="-0.0975" y1="2.759375" x2="0.4975" y2="2.960625" layer="31" rot="R270"/>
+<rectangle x1="-0.4975" y1="2.759375" x2="0.0975" y2="2.960625" layer="31" rot="R270"/>
+<rectangle x1="-0.8975" y1="2.759375" x2="-0.3025" y2="2.960625" layer="31" rot="R270"/>
+<rectangle x1="-1.2975" y1="2.759375" x2="-0.7025" y2="2.960625" layer="31" rot="R270"/>
+<rectangle x1="-1.6975" y1="2.759375" x2="-1.1025" y2="2.960625" layer="31" rot="R270"/>
+<rectangle x1="-2.0975" y1="2.759375" x2="-1.5025" y2="2.960625" layer="31" rot="R270"/>
+<rectangle x1="-2.4975" y1="2.759375" x2="-1.9025" y2="2.960625" layer="31" rot="R270"/>
+<text x="0" y="3.3" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-3.3" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
 </package>
 <package name="CRYSTAL-SMD-2.0X1.6MM">
 <description>&lt;h3&gt;2.0 x 1.6 mm Crystal&lt;/h3&gt;
@@ -17368,7 +17464,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <description>&lt;h3&gt;2.4GHz Meander PCB Trace Antenna&lt;/h3&gt;
 &lt;p&gt;PCB trace antenna with a 15.2 x 5.7mm footprint.&lt;/p&gt;
 &lt;p&gt;Based on layout from &lt;a href="http://www.ti.com/lit/an/swra117d/swra117d.pdf"&gt;TI app note AN043&lt;/a&gt;.&lt;/p&gt;</description>
-<polygon width="0" layer="1">
+<polygon width="0.002540625" layer="1">
 <vertex x="-0.25" y="-0.5"/>
 <vertex x="-0.25" y="4.4"/>
 <vertex x="-1.65" y="4.4"/>
@@ -19712,6 +19808,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP3" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="NFC2"/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME" device=".1_INCH" value="SFE_LOGO_NAME.1_INCH"/>
 <part name="JP6" library="SparkFun-Jumpers" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value="PWR-LED"/>
+<part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
 </parts>
 <sheets>
 <sheet>
@@ -19881,6 +19979,8 @@ power LED.</text>
 <instance part="JP3" gate="G$1" x="132.08" y="119.38" rot="R90"/>
 <instance part="LOGO3" gate="G$1" x="86.36" y="12.7"/>
 <instance part="JP6" gate="G$1" x="121.92" y="149.86" rot="R90"/>
+<instance part="FD1" gate="G$1" x="243.84" y="20.32"/>
+<instance part="FD2" gate="G$1" x="246.38" y="17.78"/>
 </instances>
 <busses>
 </busses>
