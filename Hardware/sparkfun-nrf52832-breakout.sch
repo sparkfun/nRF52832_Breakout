@@ -19881,8 +19881,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="JP3" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NO" device="_SILK" value="NFC2"/>
 <part name="LOGO3" library="SparkFun-Aesthetics" deviceset="SFE_LOGO_NAME" device=".1_INCH" value="SFE_LOGO_NAME.1_INCH"/>
 <part name="JP6" library="SparkFun-Jumpers" deviceset="JUMPER-PAD-2-NC_BY_TRACE" device="" value="PWR-LED"/>
-<part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
-<part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="1X2"/>
+<part name="FD1" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL" value="FIDUCIALUFIDUCIAL"/>
+<part name="FD2" library="SparkFun-Aesthetics" deviceset="FIDUCIAL" device="UFIDUCIAL" value="FIDUCIALUFIDUCIAL"/>
 <part name="TP1" library="SparkFun-Connectors" deviceset="TEST-POINT" device="TP_15TH_THRU" value=""/>
 <part name="TP2" library="SparkFun-Connectors" deviceset="TEST-POINT" device="TP_15TH_THRU" value=""/>
 </parts>
@@ -19908,7 +19908,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="96.52" y1="185.42" x2="96.52" y2="137.16" width="0.254" layer="97" style="shortdash"/>
 <wire x1="147.32" y1="35.56" x2="93.98" y2="35.56" width="0.254" layer="97" style="shortdash"/>
 <wire x1="93.98" y1="35.56" x2="93.98" y2="40.64" width="0.254" layer="97" style="shortdash"/>
-<text x="238.76" y="7.62" size="2.54" layer="94" font="vector">v01</text>
+<text x="238.76" y="7.62" size="2.54" layer="94" font="vector">v10</text>
 <text x="171.45" y="11.43" size="2.54" layer="94" font="vector">Jim Lindblom</text>
 <text x="121.92" y="93.98" size="1.27" layer="97" font="vector" align="top-center">Ctune (C7/8) = 2/((2*PI*13.56MHz)^2*La)
 La is inductance of NFC antenna

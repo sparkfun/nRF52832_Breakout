@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -180,9 +180,9 @@
 <text x="15.24" y="16.51" size="0.889" layer="21" font="vector" ratio="15" align="center-right">02
 !A0</text>
 <text x="15.24" y="13.97" size="0.889" layer="21" font="vector" ratio="15" align="center-right">01
-!XL2</text>
+!X2</text>
 <text x="15.24" y="11.43" size="0.889" layer="21" font="vector" ratio="15" align="center-right">00
-!XL1</text>
+!X1</text>
 <text x="15.24" y="6.35" size="0.889" layer="21" font="vector" ratio="15" align="center-right">VIN</text>
 <text x="2.7178" y="41.91" size="0.889" layer="21" font="vector" ratio="15" rot="R270" align="bottom-center">17</text>
 <text x="2.7178" y="36.83" size="0.889" layer="21" font="vector" ratio="15" align="center-left">19</text>
@@ -206,7 +206,7 @@
 <text x="16.6878" y="1.3208" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="top-center">BLK</text>
 <text x="14.6177" y="2.794" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
 <text x="10.16" y="2.794" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="center-left">VCC</text>
-<text x="8.89" y="48.26" size="1.143" layer="21" font="vector" ratio="15" align="top-center">nRF52832 Breakout</text>
+<text x="9.017" y="48.26" size="1.143" layer="21" font="vector" ratio="15" align="top-center">nRF52832 Breakout</text>
 <text x="2.413" y="44.45" size="0.889" layer="22" font="vector" ratio="15" rot="MR0" align="center-right">16</text>
 <text x="2.413" y="41.91" size="0.889" layer="22" font="vector" ratio="15" rot="MR0" align="center-right">17</text>
 <text x="2.413" y="39.37" size="0.889" layer="22" font="vector" ratio="15" rot="MR0" align="center-right">18</text>
@@ -244,9 +244,9 @@
 <text x="15.113" y="16.51" size="0.889" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">02
 !A0</text>
 <text x="15.113" y="13.97" size="0.889" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">01
-!XL2</text>
+!X2</text>
 <text x="15.113" y="11.43" size="0.889" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">00
-!XL1!</text>
+!X1</text>
 <text x="15.113" y="8.89" size="0.889" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">3.3V</text>
 <text x="15.113" y="6.35" size="0.889" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">VIN</text>
 <text x="9.017" y="24.003" size="0.889" layer="21" font="vector" ratio="15" align="top-center">NFC</text>
@@ -266,7 +266,7 @@ VCC-EN</text>
 <text x="6.477" y="25.4" size="1.143" layer="22" font="vector" ratio="15" rot="MR0" align="center-left">1</text>
 <text x="11.049" y="25.4" size="1.143" layer="22" font="vector" ratio="15" rot="MR0" align="center-right">2</text>
 <text x="8.89" y="29.1338" size="0.889" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">RTC-EN</text>
-<text x="8.89" y="48.26" size="1.143" layer="22" font="vector" ratio="15" rot="MR0" align="top-center">nRF52832 Breakout</text>
+<text x="8.763" y="48.26" size="1.143" layer="22" font="vector" ratio="15" rot="MR0" align="top-center">nRF52832 Breakout</text>
 <text x="1.143" y="1.4986" size="0.889" layer="16" font="vector" ratio="20" rot="MR270" align="bottom-center">v01</text>
 <text x="8.89" y="45.466" size="0.889" layer="22" font="vector" ratio="15" rot="MR0" align="bottom-center">http://sfe.io/t549</text>
 <text x="20.32" y="-17.78" size="1.778" layer="51" font="vector" ratio="10">Jim Lindblom</text>
@@ -274,7 +274,6 @@ VCC-EN</text>
 <wire x1="4.826" y1="11.43" x2="4.445" y2="11.43" width="0.254" layer="21"/>
 <text x="6.4262" y="17.145" size="0.889" layer="21" font="vector" ratio="15" align="bottom-center">PWR</text>
 <text x="11.5062" y="17.145" size="0.889" layer="21" font="vector" ratio="15" align="bottom-center">07</text>
-<text x="15.0622" y="8.89" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">3.3V</text>
 <wire x1="7.239" y1="23.622" x2="7.493" y2="23.622" width="0.254" layer="21"/>
 <wire x1="10.287" y1="23.622" x2="10.541" y2="23.622" width="0.254" layer="21"/>
 <wire x1="9.2837" y1="38.8493" x2="9.3726" y2="38.8493" width="0.1524" layer="41"/>
@@ -291,6 +290,7 @@ VCC-EN</text>
 <text x="15.24" y="31.1912" size="0.889" layer="21" font="vector" ratio="15" align="center-right">10</text>
 <text x="3.1877" y="3.175" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
 <text x="3.1623" y="3.175" size="0.889" layer="22" font="vector" ratio="15" rot="MR90" align="center-left">GND</text>
+<text x="15.24" y="8.89" size="0.889" layer="21" font="vector" ratio="15" align="center-right">3V3</text>
 </plain>
 <libraries>
 <library name="SparkFun-Aesthetics">
@@ -1437,12 +1437,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <vertex x="0.8866" y="-0.23263125"/>
 </polygon>
 </package>
-<package name="FIDUCIAL-1X2">
-<description>&lt;h3&gt;Fiducial - Circle, 1mm&lt;/h3&gt;
+<package name="FIDUCIAL-MICRO">
+<description>&lt;h3&gt;Fiducial - Circle, 0.25in&lt;/h3&gt;
 &lt;p&gt;Point-of-reference for pick-and-place machines and other optical instruments.&lt;/p&gt;
 &lt;p&gt;Devices using:
 &lt;ul&gt;&lt;li&gt;FIDUCIAL&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;</description>
-<smd name="1" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" cream="no"/>
+<smd name="1" x="0" y="0" dx="0.635" dy="0.635" layer="1" roundness="100" cream="no"/>
 </package>
 </packages>
 </library>
@@ -2909,10 +2909,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="JP3" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NO_SILK" value="NFC2" x="10.16" y="23.495" rot="MR0"/>
 <element name="LOGO3" library="SparkFun-Aesthetics" package="SFE_LOGO_NAME_.1" value="SFE_LOGO_NAME.1_INCH" x="14.859" y="48.26" rot="MR0"/>
 <element name="JP6" library="SparkFun-Jumpers" package="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK" value="PWR-LED" x="8.89" y="15.24" rot="MR0"/>
-<element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="13.589" y="3.175"/>
-<element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="FIDUCIAL1X2" x="0.889" y="46.355"/>
-<element name="TP1" library="SparkFun-Connectors" package="TP_15TH" value="" x="7.62" y="21.59" rot="MR0"/>
-<element name="TP2" library="SparkFun-Connectors" package="TP_15TH" value="" x="10.16" y="21.59" rot="MR0"/>
+<element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="13.589" y="3.175"/>
+<element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="0.889" y="46.355"/>
+<element name="TP1" library="SparkFun-Connectors" package="TP_15TH" value="" x="7.62" y="21.59"/>
+<element name="TP2" library="SparkFun-Connectors" package="TP_15TH" value="" x="10.16" y="21.59"/>
 </elements>
 <signals>
 <signal name="XC1">
