@@ -15292,10 +15292,6 @@ layer for the logo on the board is tSilk.&lt;/p&gt;</description>
 <wire x1="3.127" y1="2.5" x2="3.127" y2="3.127" width="0.2032" layer="21"/>
 <wire x1="-3.127" y1="2.5" x2="-2.5" y2="3.127" width="0.2032" layer="21"/>
 <circle x="-3.2" y="3.2" radius="0.25" width="0" layer="21"/>
-<rectangle x1="0.34" y1="0.34" x2="1.96" y2="1.96" layer="31"/>
-<rectangle x1="-1.96" y1="0.34" x2="-0.34" y2="1.96" layer="31" rot="R90"/>
-<rectangle x1="-1.96" y1="-1.96" x2="-0.34" y2="-0.34" layer="31" rot="R180"/>
-<rectangle x1="0.34" y1="-1.96" x2="1.96" y2="-0.34" layer="31" rot="R270"/>
 <rectangle x1="-3.1575" y1="0.099375" x2="-2.5625" y2="0.300625" layer="31"/>
 <rectangle x1="-3.1575" y1="0.499375" x2="-2.5625" y2="0.700625" layer="31"/>
 <rectangle x1="-3.1575" y1="0.899375" x2="-2.5625" y2="1.100625" layer="31"/>
@@ -15346,6 +15342,10 @@ layer for the logo on the board is tSilk.&lt;/p&gt;</description>
 <rectangle x1="-2.4975" y1="2.759375" x2="-1.9025" y2="2.960625" layer="31" rot="R270"/>
 <text x="0" y="3.3" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-3.3" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+<rectangle x1="0.4894" y1="0.4894" x2="1.8106" y2="1.8106" layer="31"/>
+<rectangle x1="-1.8106" y1="0.4894" x2="-0.4894" y2="1.8106" layer="31" rot="R90"/>
+<rectangle x1="-1.8106" y1="-1.8106" x2="-0.4894" y2="-0.4894" layer="31" rot="R180"/>
+<rectangle x1="0.4894" y1="-1.8106" x2="1.8106" y2="-0.4894" layer="31" rot="R270"/>
 </package>
 <package name="CRYSTAL-SMD-2.0X1.6MM">
 <description>&lt;h3&gt;2.0 x 1.6 mm Crystal&lt;/h3&gt;
