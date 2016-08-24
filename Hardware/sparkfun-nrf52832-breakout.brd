@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.001" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.0005" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -2444,18 +2444,26 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="PAD-JUMPER-2-NO_YES_SILK">
-<description>Small solder jumper with no paste layer so it will open after reflow.</description>
-<wire x1="0.8" y1="-1" x2="-0.8" y2="-1" width="0.2032" layer="21"/>
-<wire x1="0.8" y1="1" x2="1" y2="0.7" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1" y1="0.7" x2="-0.8" y2="1" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1" y1="-0.7" x2="-0.8" y2="-1" width="0.2032" layer="21" curve="90"/>
-<wire x1="0.8" y1="-1" x2="1" y2="-0.7" width="0.2032" layer="21" curve="90"/>
-<wire x1="-0.8" y1="1" x2="0.8" y2="1" width="0.2032" layer="21"/>
-<smd name="1" x="-0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.45" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<text x="0" y="1.27" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.27" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<package name="SMT-JUMPER_2_NC_TRACE_SILK">
+<wire x1="0.762" y1="-1.016" x2="-0.762" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="0.762" y1="1.016" x2="1.2192" y2="0.5588" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.2192" y1="0.5588" x2="-0.762" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.2192" y1="-0.5588" x2="-0.762" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="0.762" y1="-1.016" x2="1.2192" y2="-0.5588" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.2192" y1="-0.5588" x2="1.2192" y2="0.5588" width="0.1524" layer="21"/>
+<wire x1="-1.2192" y1="-0.5588" x2="-1.2192" y2="0.5588" width="0.1524" layer="21"/>
+<wire x1="-0.762" y1="1.016" x2="0.762" y2="1.016" width="0.1524" layer="21"/>
+<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-0.508" y1="0" x2="0.508" y2="0" width="0.254" layer="1"/>
+<polygon width="0.127" layer="29">
+<vertex x="-0.1905" y="0.127"/>
+<vertex x="0.1905" y="0.127"/>
+<vertex x="0.1905" y="-0.127"/>
+<vertex x="-0.1905" y="-0.127"/>
+</polygon>
 </package>
 <package name="PAD-JUMPER-2-NC_BY_TRACE_YES_SILK">
 <description>Solder jumper, small, shorted with trace. No paste layer. Trace is cuttable.</description>
@@ -2868,7 +2876,7 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <attribute name="PROD_ID" value="CAP-07888" x="12.065" y="6.35" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 </element>
 <element name="J1" library="SparkFun-Connectors" package="1X06" value="" x="2.54" y="1.27"/>
-<element name="JP1" library="SparkFun-Jumpers" package="PAD-JUMPER-2-NO_YES_SILK" value="VDD-EN" x="8.89" y="5.715" rot="MR0"/>
+<element name="JP1" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NC_TRACE_SILK" value="VDD-EN" x="8.89" y="5.715" rot="MR0"/>
 <element name="J5" library="SparkFun-Connectors" package="2X5-PTH-1.27MM" value="CORTEX_DEBUGPTH" x="8.89" y="19.558"/>
 <element name="SW1" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_SMD_4.6X2.8MM" value="" x="6.35" y="11.43" rot="R90">
 <attribute name="PROD_ID" value="SWCH-13065" x="6.35" y="11.43" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
@@ -3170,7 +3178,6 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="7.239" y1="38.8874" x2="5.8674" y2="38.8874" width="0.2286" layer="1"/>
 <wire x1="5.842" y1="36.4744" x2="5.8674" y2="36.4998" width="0.2286" layer="16"/>
 <wire x1="5.8674" y1="36.4998" x2="5.8674" y2="38.8874" width="0.2286" layer="16"/>
-<wire x1="8.44" y1="5.715" x2="8.44" y2="7.17" width="0.4064" layer="16"/>
 <wire x1="10.1901" y1="8.128" x2="9.398" y2="8.128" width="0.4064" layer="16"/>
 <wire x1="9.398" y1="8.128" x2="8.44" y2="7.17" width="0.4064" layer="16"/>
 <wire x1="6.35" y1="18.923" x2="4.7244" y2="18.923" width="0.4064" layer="1"/>
@@ -3179,6 +3186,8 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <wire x1="11.5434" y1="14.5034" x2="10.2362" y2="14.5034" width="0.1524" layer="1"/>
 <wire x1="10.2362" y1="14.5034" x2="9.8298" y2="14.097" width="0.1524" layer="1"/>
 <wire x1="9.8298" y1="14.097" x2="9.8298" y2="8.128" width="0.1524" layer="1"/>
+<wire x1="8.382" y1="5.715" x2="8.44" y2="5.773" width="0.4064" layer="16"/>
+<wire x1="8.44" y1="5.773" x2="8.44" y2="7.17" width="0.4064" layer="16"/>
 </signal>
 <signal name="DEC1">
 <contactref element="C3" pad="2"/>
@@ -3794,9 +3803,9 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <signal name="N$14">
 <contactref element="J1" pad="4"/>
 <contactref element="JP1" pad="1"/>
-<wire x1="9.34" y1="5.715" x2="9.34" y2="4.63" width="0.4064" layer="16"/>
-<wire x1="9.34" y1="4.63" x2="10.16" y2="3.81" width="0.4064" layer="16"/>
 <wire x1="10.16" y1="3.81" x2="10.16" y2="1.27" width="0.4064" layer="16"/>
+<wire x1="10.16" y1="3.81" x2="9.398" y2="4.572" width="0.4064" layer="16"/>
+<wire x1="9.398" y1="4.572" x2="9.398" y2="5.715" width="0.4064" layer="16"/>
 </signal>
 <signal name="VIN">
 <contactref element="U1" pad="1"/>
@@ -3992,11 +4001,17 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <approved hash="19,16,908609ac37244bd3"/>
 <approved hash="19,16,960b068b0e869e06"/>
 <approved hash="19,16,2e294b933420b447"/>
+<approved hash="19,16,1d6825b8f4a8cbd3"/>
 <approved hash="19,16,b5d9756bb57e6bc3"/>
 <approved hash="19,16,e369710f3bc055df"/>
-<approved hash="19,16,1d6825b8f4a8cbd3"/>
 <approved hash="19,16,bb610b6b21366c9f"/>
+<approved hash="19,16,ce18c2b382b3e2d0"/>
 <approved hash="19,16,0f8954b91bafa954"/>
+<approved hash="19,16,b014b9123b103d32"/>
+<approved hash="19,16,ba221f9c5faba295"/>
+<approved hash="19,16,13b0575a579d1377"/>
+<approved hash="19,16,47b338b80b3018f3"/>
+<approved hash="19,16,333b84032f7b86ef"/>
 <approved hash="19,16,87272cb8d3ab91ff"/>
 <approved hash="19,16,4a87d3b85c3020d2"/>
 <approved hash="19,16,fa3d6afd42eaea26"/>
