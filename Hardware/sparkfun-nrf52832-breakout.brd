@@ -56,7 +56,7 @@
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
@@ -199,11 +199,11 @@
 !A6</text>
 <text x="2.7178" y="13.97" size="0.889" layer="21" font="vector" ratio="15" align="center-left">31
 !A7</text>
-<text x="2.7178" y="8.89" size="0.889" layer="21" font="vector" ratio="15" align="center-left">3.3V</text>
+<text x="2.7178" y="8.89" size="0.889" layer="21" font="vector" ratio="15" align="center-left">3V3</text>
 <text x="2.7178" y="6.35" size="0.889" layer="21" font="vector" ratio="15" align="center-left">VIN</text>
 <text x="3.81" y="11.43" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="center">!RST!</text>
-<text x="1.0922" y="1.3208" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">GRN</text>
-<text x="16.6878" y="1.3208" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="top-center">BLK</text>
+<text x="1.0922" y="1.3716" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="bottom-center">GRN</text>
+<text x="16.6878" y="1.3716" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="top-center">BLK</text>
 <text x="14.6177" y="2.794" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="center-left">GND</text>
 <text x="10.16" y="2.794" size="0.889" layer="21" font="vector" ratio="15" rot="R90" align="center-left">VCC</text>
 <text x="9.017" y="48.26" size="1.143" layer="21" font="vector" ratio="15" align="top-center">nRF52832 Breakout</text>
