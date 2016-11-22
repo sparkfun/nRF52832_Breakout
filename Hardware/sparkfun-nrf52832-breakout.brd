@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -2878,10 +2878,10 @@ These rules have been curated by SparkFuns DFM commitee. After doing much resear
 <element name="J1" library="SparkFun-Connectors" package="1X06" value="" x="2.54" y="1.27"/>
 <element name="JP1" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NC_TRACE_SILK" value="VDD-EN" x="8.89" y="5.715" rot="MR0"/>
 <element name="J5" library="SparkFun-Connectors" package="2X5-PTH-1.27MM" value="CORTEX_DEBUGPTH" x="8.89" y="19.558"/>
-<element name="SW1" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_SMD_4.6X2.8MM" value="" x="6.35" y="11.43" rot="R90">
+<element name="SW1" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_SMD_4.6X2.8MM" value="TACTILE_SWITCH_SMD_4_6X2_8MM" x="6.35" y="11.43" rot="R90">
 <attribute name="PROD_ID" value="SWCH-13065" x="6.35" y="11.43" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
-<element name="SW2" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_SMD_4.6X2.8MM" value="" x="11.43" y="11.43" rot="R90">
+<element name="SW2" library="SparkFun-Electromechanical" package="TACTILE_SWITCH_SMD_4.6X2.8MM" value="TACTILE_SWITCH_SMD_4_6X2_8MM" x="11.43" y="11.43" rot="R90">
 <attribute name="PROD_ID" value="SWCH-13065" x="11.43" y="11.43" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
 </element>
 <element name="D1" library="SparkFun-LED" package="LED-0603" value="RED" x="6.35" y="16.51">
