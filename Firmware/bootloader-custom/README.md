@@ -17,4 +17,12 @@ For more information on the Nordic BLE & HCI/UART Bootloader/DFU, check out thei
 
 ### Toolchain Requirements
 
-### Using the Bootloader
+To compile this bootloader, you'll need [armgcc](https://launchpad.net/gcc-arm-embedded) and Nordic's [nRF5_SDK_V11.0.0](https://developer.nordicsemi.com/nRF5_SDK/nRF5_SDK_v11.x.x/).
+
+Documentation for the nRF5 SDK (v11.0.0) can be found at [http://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk5.v11.0.0%2Findex.html](http://infocenter.nordicsemi.com/index.jsp?topic=%2Fcom.nordic.infocenter.sdk5.v11.0.0%2Findex.html). Follow along with the instructions there to install and set up the SDK. Note that GCC is used instead of Keil or IAR.
+
+### Building the Bootloader
+
+Before building the bootloader, open the [Makefile](https://github.com/sparkfun/nRF52832_Breakout/blob/master/Firmware/bootloader-custom/Makefile) and modify `SDK_PATH` ([line 4](https://github.com/sparkfun/nRF52832_Breakout/blob/master/Firmware/bootloader-custom/Makefile#L4), setting the relative path to the **top-level path** of your Nordic SDK.
+
+Once that is set, open this "bootloader-custom" folder in a command terminal and type `make`. `sfe_nrf52832_dfu.hex` should be created in a "_build" folder, which can be uploaded to the **Bootloader section** of the nRF52832's flash.
